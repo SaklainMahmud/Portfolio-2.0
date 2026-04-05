@@ -5,8 +5,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 0 1.5rem;
-  height: 70px;
+  padding: env(safe-area-inset-top, 0px) 1.5rem 0;
+  min-height: calc(70px + env(safe-area-inset-top, 0px));
   display: flex;
   align-items: center;
   transition: background var(--trans-med), border-color var(--trans-med), box-shadow var(--trans-med);
@@ -129,7 +129,7 @@
   
   .nav-links {
     position: fixed;
-    top: 70px;
+    top: calc(70px + env(safe-area-inset-top, 0px));
     left: 0;
     right: 0;
     flex-direction: column;
