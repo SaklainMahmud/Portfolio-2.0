@@ -5,11 +5,11 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: env(safe-area-inset-top, 0px) 1.5rem 0;
-  min-height: calc(70px + env(safe-area-inset-top, 0px));
+  padding: 0 1.5rem;
+  height: 70px;
   display: flex;
   align-items: center;
-  transition: background var(--trans-med), border-color var(--trans-med), box-shadow var(--trans-med);
+  transition: all var(--trans-med);
 }
 
 .navbar.scrolled {
@@ -130,33 +130,50 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding-top: max(env(safe-area-inset-top, 0px), 30px);
-    min-height: calc(70px + max(env(safe-area-inset-top, 0px), 30px));
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    height: 65px;
+    padding: 0 1.25rem;
+    border-radius: 16px;
+  }
+  
+  .navbar.scrolled {
+    background: rgba(5, 10, 20, 0.95);
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 245, 255, 0.15);
   }
 
   .nav-toggle { display: flex; }
   
   .nav-links {
-    position: fixed;
-    top: calc(70px + max(env(safe-area-inset-top, 0px), 30px));
+    position: absolute;
+    top: 75px; 
     left: 0;
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: rgba(5, 10, 20, 0.97);
-    border-bottom: 1px solid var(--border-glass);
+    background: rgba(5, 10, 20, 0.98);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
     backdrop-filter: blur(20px);
-    padding: 1rem;
-    transform: translateY(-110%);
-    transition: transform var(--trans-slow);
+    padding: 1.5rem;
+    
+    transform: translateY(-15px);
+    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
+    transition: all var(--trans-med);
+    box-shadow: var(--shadow-card);
   }
   
   .nav-links.open {
     transform: translateY(0);
-    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
-  .nav-link { width: 100%; text-align: center; padding: 14px; font-size: 0.9rem; }
-  .nav-cta { margin-top: 0.5rem; width: 100%; text-align: center; display: block; padding: 12px; }
+  .nav-link { width: 100%; text-align: center; padding: 14px; font-size: 0.95rem; }
+  .nav-cta { margin-top: 1rem; width: 100%; text-align: center; display: block; padding: 12px; }
 }
