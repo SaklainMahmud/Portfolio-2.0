@@ -41,7 +41,7 @@ const skillGroups = [
     title: 'Databases',
     skills: [
       { name: 'MongoDB', hot: true },
-      { name: 'PostgreSQL', hot: false },
+      { name: 'PostgreSQL', hot: true },
       { name: 'MySQL', hot: false },
     ],
   },
@@ -73,7 +73,7 @@ const proficiencies = [
   { label: 'JavaScript / TypeScript', pct: 88 },
   { label: 'React & Next.js', pct: 85 },
   { label: 'Node.js / Express', pct: 82 },
-  { label: 'MongoDB', pct: 78 },
+  { label: 'PostgreSQL', pct: 78 },
   { label: 'Python', pct: 70 },
   { label: 'C# / .NET', pct: 65 },
 ];

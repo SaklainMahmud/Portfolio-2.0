@@ -78,6 +78,7 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
   min-height: 100vh;
+  caret-color: var(--neon-cyan);
 }
 
 /* Custom scrollbar */
@@ -312,4 +313,13 @@ img { max-width: 100%; display: block; }
     --section-pad: 4rem 1.25rem;
   }
   .section-title { font-size: 1.8rem; }
+}
+
+/* ============ NEON CURSORS ============ */
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 28 30" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3L18.5 14L13.5 16L10.5 23L4.5 19V3Z" fill="%2300f5ff" stroke="%23ffffff" stroke-width="1.5" stroke-linejoin="round"/></svg>') 5 3, auto;
+}
+
+a, button, .btn-neon, input[type="submit"], .social-link, .contact-link-card, .footer-social-link {
+  cursor: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 28 30" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3L18.5 14L13.5 16L10.5 23L4.5 19V3Z" fill="%23bf5af2" stroke="%23ffffff" stroke-width="1.5" stroke-linejoin="round"/></svg>') 5 3, pointer !important;
 }
