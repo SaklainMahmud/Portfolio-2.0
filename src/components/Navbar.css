@@ -109,6 +109,10 @@
   gap: 5px;
   cursor: pointer;
   padding: 6px;
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-toggle span {
@@ -125,11 +129,16 @@
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding-top: max(env(safe-area-inset-top, 0px), 30px);
+    min-height: calc(70px + max(env(safe-area-inset-top, 0px), 30px));
+  }
+
   .nav-toggle { display: flex; }
   
   .nav-links {
     position: fixed;
-    top: calc(70px + env(safe-area-inset-top, 0px));
+    top: calc(70px + max(env(safe-area-inset-top, 0px), 30px));
     left: 0;
     right: 0;
     flex-direction: column;
