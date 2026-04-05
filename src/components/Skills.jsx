@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import './Skills.css';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
@@ -69,57 +68,6 @@ const skillGroups = [
   },
 ];
 
-const proficiencies = [
-  { label: 'JavaScript / TypeScript', pct: 88 },
-  { label: 'React & Next.js', pct: 85 },
-  { label: 'Node.js / Express', pct: 82 },
-  { label: 'PostgreSQL', pct: 78 },
-  { label: 'Python', pct: 70 },
-  { label: 'C# / .NET', pct: 65 },
-];
-
-function ProfBar({ label, pct }) {
-  const fillRef = useRef(null);
-
-  useEffect(() => {
-    const el = fillRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          el.style.setProperty('--pct', pct / 100);
-          el.classList.add('animated');
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.5 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [pct]);
-
-  return (
-    <div className="prof-item">
-      <div className="prof-header">
-        <span className="prof-label">{label}</span>
-        <span className="prof-pct">{pct}%</span>
-      </div>
-      <div className="prof-bar-track">
-        <div
-          ref={fillRef}
-          className="prof-bar-fill"
-          style={{ transform: `scaleX(0)` }}
-          aria-label={`${label}: ${pct}%`}
-          role="progressbar"
-          aria-valuenow={pct}
-          aria-valuemin={0}
-          aria-valuemax={100}
-        ></div>
-      </div>
-    </div>
-  );
-}
-
 export default function Skills() {
   useScrollReveal();
 
@@ -152,15 +100,6 @@ export default function Skills() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="skills-proficiency reveal">
-          <p className="prof-title">// Proficiency Overview</p>
-          <div className="prof-list">
-            {proficiencies.map(p => (
-              <ProfBar key={p.label} {...p} />
-            ))}
-          </div>
         </div>
       </div>
     </section>
