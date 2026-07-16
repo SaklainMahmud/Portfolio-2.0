@@ -92,11 +92,11 @@ export default function Hero() {
 
           <div className="hero-stats" aria-label="Statistics">
             <div className="stat-item">
-              <div className="stat-value">5+</div>
+              <div className="stat-value">7+</div>
               <div className="stat-label">Projects</div>
             </div>
             <div className="stat-item">
-              <div className="stat-value">3+</div>
+              <div className="stat-value">4+</div>
               <div className="stat-label">Years Coding</div>
             </div>
             <div className="stat-item">

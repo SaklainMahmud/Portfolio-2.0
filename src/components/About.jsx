@@ -27,7 +27,7 @@ export default function About() {
                 </div>
                 <div className="info-badge">
                   <div className="info-badge-icon"><BookOpen size={14} /></div>
-                  CSE @ AIUB (2022 – Present)
+                  CSE @ AIUB (2022 – 2026)
                 </div>
                 <div className="info-badge">
                   <div className="info-badge-icon"><Globe size={14} /></div>
@@ -59,11 +59,11 @@ export default function About() {
               APIs with Node.js and Express to crafting polished, reactive UIs with React and Next.js.
               I aim to contribute to high-quality software products while continuously learning and adapting to emerging technologies.
             </p>
-            <p className="about-text">
+            {/*<p className="about-text">
               Currently interning at <span className="about-highlight neon-text">NeuroFlight Lab</span> (Since Jan 2026),
               where I'm applying my skills in a professional environment and growing as a developer
               every single day.
-            </p>
+            </p>*/}
 
             <div className="about-links">
               <a
