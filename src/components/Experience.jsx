@@ -6,7 +6,7 @@ const workItems = [
   {
     title: 'Software Engineering Intern',
     org: 'NeuroFlight Lab',
-    period: 'Jan 2026 – Present',
+    period: 'Feb 2026 – Apr 2026',
     location: 'Dhaka, Bangladesh',
     desc: 'Applying software development skills in a professional setting. Working on real-world projects with a focus on clean architecture, code quality, and team collaboration.',
     accent: false,
@@ -17,9 +17,9 @@ const eduItems = [
   {
     title: 'Bachelor in Computer Science & Engineering',
     org: 'American International University‑Bangladesh (AIUB)',
-    period: '2022 – Present',
+    period: 'Feb 2022 – June 2026',
     location: 'Dhaka, Bangladesh',
-    desc: 'Studying core CS fundamentals: data structures, algorithms, software engineering, networking, and OOP design patterns.',
+    desc: 'Completed a Bachelors degree in Computer Science and Engineering, with a focus on core computer science fundamentals.',
     accent: true,
   },
   {
@@ -27,7 +27,7 @@ const eduItems = [
     org: 'Comilla Residential College',
     period: '2018 – 2020',
     location: 'Comilla, Bangladesh',
-    desc: 'Completed HSC with focus on mathematics and physics.',
+    desc: 'Completed HSC with a GPA 5.00.',
     accent: true,
   },
   {
@@ -35,7 +35,7 @@ const eduItems = [
     org: 'Comilla Zilla School',
     period: '2014 – 2018',
     location: 'Comilla, Bangladesh',
-    desc: 'Completed secondary education with strong academic performance.',
+    desc: 'Completed SSC with a GPA 4.61.',
     accent: true,
   },
 ];
