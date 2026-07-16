@@ -19,7 +19,7 @@ const eduItems = [
     org: 'American International University‑Bangladesh (AIUB)',
     period: 'Feb 2022 – June 2026',
     location: 'Dhaka, Bangladesh',
-    desc: 'Completed a Bachelors degree in Computer Science and Engineering, with a focus on core computer science fundamentals',
+    desc: 'Studying core CS fundamentals: data structures, algorithms, software engineering, networking, and OOP design patterns.',
     accent: true,
   },
   {
@@ -27,7 +27,7 @@ const eduItems = [
     org: 'Comilla Residential College',
     period: '2020',
     location: 'Comilla, Bangladesh',
-    desc: 'Completed HSC with a GPA of 5.00.',
+    desc: 'Completed HSC with focus on mathematics and physics.',
     accent: true,
   },
   {
@@ -35,7 +35,7 @@ const eduItems = [
     org: 'Comilla Zilla School',
     period: '2018',
     location: 'Comilla, Bangladesh',
-    desc: 'Completed SSC with a GPA of 4.61',
+    desc: 'Completed secondary education with strong academic performance.',
     accent: true,
   },
 ];
